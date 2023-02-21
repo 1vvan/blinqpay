@@ -1,36 +1,5 @@
 @charset "UTF-8";
 
-/* ----FONTS-------------------------- */
-
-@font-face {
-    font-family: 'Proxima Nova Regular';
-    src: url('../fonts/Proxima-Nova-Regular/proximanova_regular-webfont.woff2') format('woff2'),
-        url('../fonts/Proxima-Nova-Regular/proximanova_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url('../fonts/Proxima-Nova-Bold/proximanova_bold-webfont.woff2') format('woff2'),
-        url('../fonts/Proxima-Nova-Bold/proximanova_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Proxima Nova ExtraBold';
-    src: url('../fonts/Proxima-Nova-ExtraBold/proximanova_extrabold-webfont.woff2') format('woff2'),
-        url('../fonts/Proxima-Nova-ExtraBold/proximanova_extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Proxima Nova Black';
-    src: url('../fonts/Proxima-Nova-Black/proximanova_black-webfont.woff2') format('woff2'),
-        url('../fonts/Proxima-Nova-Black/proximanova_black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* ------------------------------------------ */
 * {
     padding: 0;
@@ -123,8 +92,6 @@ h6 {
     font-weight: inherit;
 }
 
-
-
 /*----------------------------------------------------*/
 
 .wrapper {
@@ -153,7 +120,8 @@ h6 {
     padding: 0px 15px;
     box-sizing: content-box;
     
-    font-family: 'Proxima Nova Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 16px;
     line-height: 125%;
 }
@@ -163,27 +131,27 @@ h6 {
     }
 }
 
-._more-btn{
-    
-    display: inline-flex;
-    gap: 13px;
+._more-btn::after{
+    content: url('../images/icons/arrow-for-btn.svg');
+    margin: 0px 0px 0px 13px;
 }
+
 ._more-btn span{
-    font-family: 'Proxima Nova ExtraBold';
+    font-weight: 800;
     font-size: 18px;
     line-height: 122%;
     color: #5C0E62;
 }
 
 ._block-subtitle{
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 12px;
     line-height: 128%;
     letter-spacing: 0.04em;
     color: #E23434;
 }
 ._block-title{
-    font-family: 'Proxima Nova ExtraBold';
+    font-weight: 800;
     font-size: 36px;
     line-height: 128%;
     letter-spacing: 0.04em;
@@ -195,7 +163,7 @@ h6 {
     color: #5C0E62;
 }
 ._block-text{
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 14px;
     line-height: 128%;
     letter-spacing: 0.04em;
@@ -252,7 +220,7 @@ h6 {
     display: flex;
     align-items: center;
     gap: 40px;
-    font-family: 'Proxima Nova Regular';
+    font-weight: 400;
     font-size: 16px;
 }
 @media (max-width: 1025px){
@@ -262,14 +230,14 @@ h6 {
 }
 
 .menu__support {
-    font-family: 'Proxima Nova Bold';
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 15px;
     line-height: 120%;
 }
 
 .menu__button {
-    font-family: 'Proxima Nova Bold';
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 15px;
     line-height: 120%;
 
     display: flex;
@@ -335,9 +303,12 @@ h6 {
     .header__container {
         justify-content: space-between;
     }
-
+    .logo{
+        width: 100%;
+    }
     .header__burger {
         display: block;
+        margin: 0px 15px 0px 0px;
     }
 
     .menu {
@@ -394,7 +365,40 @@ h6 {
     }
 }
 
+.change-language{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+
+    font-weight: 600;
+    font-size: 15px;
+    font-size: 15px 15px 15px 15px;
+    line-height: 120%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+.change-language::-ms-expand{
+    display: none;
+}
+.select-wrapper{
+    position: relative;
+    cursor: pointer;
+}
+.select-wrapper::after{
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 38%;
+    transform: translateY(-50%) rotate(-135deg);
+    border-width: 8px 8px 0 0;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+}
 /*-----MAIN-----------------------------------------------*/
 
 .main{
@@ -431,12 +435,12 @@ h6 {
 }
 
 .top-block__title {
-    font-family: 'Proxima Nova ExtraBold';
+    font-weight: 800;
     font-size: 54px;
     line-height: 125%;
 }
 .top-block__subtitle {
-    font-family: 'Proxima Nova Regular';
+    font-weight: 400;
     font-size: 18px;
     line-height: 122%;
     margin: 19px 0px 40px 0px;
@@ -448,7 +452,7 @@ h6 {
     border: 1px solid rgba(171, 163, 163, 0.2);
     border-radius: 4px;
 
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 18px;
     line-height: 122%;
     color: #fff;
@@ -530,14 +534,13 @@ h6 {
 
 .community__card {
     width: 280px;
-    height: 164px;
     border-left: 5px solid rgb(92, 14, 98);
     box-shadow: 7px 10px 50px #E8E2F0;
     border-radius: 10px;
-    padding: 30px 30px 0px 48px;
+    padding: 30px 30px 30px 48px;
 }
 .community__card_title{
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 22px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -545,7 +548,7 @@ h6 {
     margin: 4px 0px 8px 0px;
 }
 .community__card_subtitle{
-    font-family: 'Proxima Nova Regular';
+    font-weight: 400;
     font-size: 16px;
     line-height: 128.6%;
     letter-spacing: 0.075em;
@@ -561,7 +564,7 @@ h6 {
 }
 
 .community__title {
-    font-family: 'Proxima Nova ExtraBold';
+    font-weight: 800;
     font-size: 40px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -569,7 +572,7 @@ h6 {
 }
 
 .community__subtitle {
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 16px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -716,8 +719,11 @@ h6 {
 }
 
 @media (max-width: 992px) {
+    .saving__body{
+        align-items: center;
+    }
     .saving__image img {
-        max-width: 450px;
+        max-width: 360px;
     }
 
     .saving__content {
@@ -761,7 +767,7 @@ h6 {
 }
 
 .customers__title {
-    font-family: 'Proxima Nova ExtraBold';
+    font-weight: 800;
     font-size: 40px;
     line-height: 128.6%;
     letter-spacing: 0.1em;
@@ -772,7 +778,7 @@ h6 {
 }
 
 .customers__subtitle {
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 16px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -797,7 +803,7 @@ h6 {
     margin: -20px 0px 0px 0px;
     text-align: center;
     width: 470px;
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 16px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -805,7 +811,7 @@ h6 {
 }
 
 .customer__name {
-    font-family: 'Proxima Nova Black';
+    font-weight: 900;
     font-size: 21.1226px;
     line-height: 128.6%;
     letter-spacing: 0.075em;
@@ -814,7 +820,7 @@ h6 {
 }
 
 .customer__job {
-    font-family: 'Proxima Nova Black';
+    font-weight: 900;
     font-size: 14.0817px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -846,7 +852,7 @@ h6 {
 }
 
 .try-now__text {
-    font-family: 'Proxima Nova ExtraBold';
+    font-weight: 800;
     font-size: 40px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -857,8 +863,8 @@ h6 {
 }
 
 .try-now__btn {
-    width: 200px;
     height: 50px;
+    padding: 15px;
     background: #FFBC51;
     border-radius: 4px;
 
@@ -866,7 +872,7 @@ h6 {
     align-items: center;
     justify-content: center;
     
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 18px;
     line-height: 17px;
     color: #FFFFFF;
@@ -939,7 +945,7 @@ h6 {
 .footer__copyright {
     max-width: 153px;
 
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 16px;
     line-height: 129%;
     letter-spacing: 0.04em;
@@ -958,7 +964,7 @@ h6 {
 }
 
 .navigation__title {
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 14px;
     line-height: 128.6%;
     letter-spacing: 0.04em;
@@ -971,7 +977,7 @@ h6 {
     gap: 20px;
 }
 a.navigation__link {
-    font-family: 'Proxima Nova Bold';
+    font-weight: 700;
     font-size: 14px;
     line-height: 128.6%;
     letter-spacing: 0.04em;

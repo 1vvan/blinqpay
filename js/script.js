@@ -60,3 +60,40 @@ new Swiper('.customer__slider', {
     },
     speed: 800,
 });
+
+
+// Language Change
+const select = document.getElementById('change');
+const allLang = ['en', 'ru', 'ua'];
+
+select.addEventListener('change', changeURLLanguage);
+// Задача перенаправить на URL с указанием языка
+function changeURLLanguage() {
+    let lang = select.value;
+    location.href = window.location.pathname + '#' + lang;
+    location.reload();
+};
+
+function ChangeLanguage() {
+    let hash = window.location.hash;
+    hash = hash.substring(1);
+    if (!allLang.includes(hash)) {
+        location.href = window.location.pathname + '#en';
+        location.reload();
+    };
+    select.value = hash;
+    for (let key in langArr) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langArr[key][hash];
+        };
+    };
+};
+ChangeLanguage();
+
+const selectLanguage = document.querySelector('.change-language');
+
+const choices = new Choices(selectLanguage, {
+    searchEnabled: false,
+    itemSelectText: false,
+});
