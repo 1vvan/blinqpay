@@ -50,6 +50,23 @@
                     </li>
                 </ul>
             </nav>
+            <div class="popup">
+                <div class="popup__close"></div>
+                <form class="popup__form form_sign-in">
+                    <span class="popup__form_title lng-popup_title_sign-in">Sign In</span>
+                    <input name="email" type="email" placeholder="E-mail">
+                    <input name="password" type="password" placeholder="Password">
+                    <button id="submit-btn" type="submit" class="popup__btn lng-popup__btn">Submit</button>
+                    <button id="registration_btn" type="submit" class="popup__btn lng-signup">Sign Up</button>
+                </form>
+                <form class="popup__form form_registration">
+                    <span class="popup__form_title lng-popup_title_sign-up">Sign Up</span>
+                    <input name="email" type="email" placeholder="E-mail">
+                    <input name="password" type="password" placeholder="Password">
+                    <button id="submit-btn" type="submit" class="popup__btn lng-popup__btn">Submit</button>
+                    <button id="sign-in_btn" type="submit" class="popup__btn lng-signin">Sign In</button>
+                </form>
+            </div>
                 <div class="select-wrapper">
                     <select id="change" class="header__language change-language">
                         <option value="ua">UA</option>
@@ -299,6 +316,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/lang.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

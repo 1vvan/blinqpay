@@ -31,6 +31,32 @@ const langArr = {
         "ua": "Увійти",
     },
 // -----
+    "popup_title_sign-in": {
+        "ru": "Войти",
+        "en": "Sign In",
+        "ua": "Увійти",
+    },
+    "popup__btn": {
+        "ru": "Подтвердить",
+        "en": "Submit",
+        "ua": "Підтвердити",
+    },
+    "popup_title_sign-up": {
+        "ru": "Зарегистрироваться",
+        "en": "Sign Up",
+        "ua": "Зареєструватися",
+    },
+    "signup": {
+        "ru": "Зарегистрироваться",
+        "en": "Sign Up",
+        "ua": "Зареєструватися",
+    },
+    "signin": {
+        "ru": "Войти",
+        "en": "Sign In",
+        "ua": "Увійти",
+    },
+// -----
     "top-block_title": {
         "ru": "Получите оплату быстрее",
         "en": "Get Your Payment Faster",
@@ -105,9 +131,9 @@ const langArr = {
         "ua": "КРЕДИТНАЯ КАРТА",
     },
     "easy__title": {
-        "ru": "Оплата <span>стає простішою</span>",
+        "ru": "Оплата <span>становится проще</span>",
         "en": "Payment <span>Gets Easier</span>",
-        "ua": "Оплата <span>становится проще</span>",
+        "ua": "Оплата <span>стає простішою</span>",
     },
     "easy-btn": {
         "ru": "<span>Подробнее</span>",
@@ -123,7 +149,7 @@ const langArr = {
     "banking__title": {
         "ru": "Умный мобильный <span>банкинг</span>",
         "en": "Smart Mobile <span>Banking</span>",
-        "ua": "Роумний мобільний <span>банкінг</span>",
+        "ua": "Розумний мобільний <span>банкінг</span>",
     },
     "banking-btn": {
         "ru": "<span>Подробнее</span>",
@@ -258,13 +284,7 @@ const langArr = {
         "ru": "Лас-Вегас",
         "en": "Las Vegas",
         "ua": "Лас-Вегас",
-    },
-        "": {
-        "ru": "",
-        "en": "",
-        "ua": "",
-    },
-        
+    },  
 // -----------
     "more-btn": {
         "ru": "<span>Подробнее</span>",
@@ -277,3 +297,8 @@ const langArr = {
         "ua": "Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw",
     },
 };
+    // "": {
+    //     "ru": "",
+    //     "en": "",
+    //     "ua": "",
+    // },
