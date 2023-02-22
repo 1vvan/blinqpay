@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 })
 
+// ------------------------------------------
 // Scroll Animation
 AOS.init({
   // Global settings:
@@ -29,6 +30,7 @@ AOS.init({
 
 });
 
+// ------------------------------------------
 // Spoiler Footer
 document.querySelectorAll('.navigation__title').forEach((el) => {
     el.addEventListener('click', () => {
@@ -47,6 +49,7 @@ document.querySelectorAll('.navigation__title').forEach((el) => {
     })
 })
 
+// ------------------------------------------
 // Swiper
 new Swiper('.customer__slider', {
     pagination: {
@@ -63,7 +66,7 @@ new Swiper('.customer__slider', {
     speed: 800,
 });
 
-
+// ------------------------------------------
 // Language Change
 const select = document.getElementById('change');
 const allLang = ['en', 'ru', 'ua'];
@@ -93,7 +96,7 @@ function ChangeLanguage() {
 };
 ChangeLanguage();
 
-
+// ------------------------------------------
 // Popup Form
 let popupWrapper = document.querySelector('.popup');
 let openPopupBtn = document.querySelector('.menu__button');
@@ -132,4 +135,11 @@ signInBtn.addEventListener("click", function(event) {
     
     registrationForm.style.display = 'none';
     signInForm.style.display = 'flex';
-  });
+});
+
+
+const element = document.querySelector('.change-language');
+const choices = new Choices(element, {
+    searchEnabled: false,
+    itemSelectText: ''
+});

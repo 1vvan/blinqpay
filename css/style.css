@@ -480,7 +480,7 @@ h6 {
 
 
 
-.change-language{
+/* .change-language{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -513,7 +513,42 @@ h6 {
     border-width: 8px 8px 0 0;
     border-color: #fff transparent transparent transparent;
     border-style: solid;
+} */
+.choices__inner{
+    background: transparent;
+    border: none;
 }
+.choices[data-type*=select-one]::after{
+    border-color: #fff transparent transparent;
+    right: 9px;
+    top: 47%;
+}
+.choices[data-type*=select-one].is-open::after {
+    border-color:  transparent transparent #fff;
+}
+@media (min-width: 640px){ 
+    .choices__list--dropdown .choices__item--selectable,
+    .choices__list[aria-expanded] .choices__item--selectable {
+    padding-right: 0px;
+    }
+}    
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+    background-color: transparent;
+}
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+    background: transparent;
+    border: 2px solid black;
+}
+.choices__list.choices__list--dropdown.is-active{
+    border: none;
+}
+.choices__item{
+    padding: 5px 0px 5px 0px;
+    font-weight: 700;
+}
+
 /*-----MAIN-----------------------------------------------*/
 
 .main{

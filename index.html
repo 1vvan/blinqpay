@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blinqpay</title>
+    </head>
 
+    <link rel="stylesheet" href="./css/choices.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/icons/logo.svg" type="image/svg">
 
@@ -52,14 +54,14 @@
             </nav>
             <div class="popup">
                 <div class="popup__close"></div>
-                <form class="popup__form form_sign-in">
+                <form action="" class="popup__form form_sign-in">
                     <span class="popup__form_title lng-popup_title_sign-in">Sign In</span>
-                    <input name="email" type="email" placeholder="E-mail">
-                    <input name="password" type="password" placeholder="Password">
+                    <input name="email" id="email" type="email" placeholder="E-mail">
+                    <input name="password" id="password" type="password" placeholder="Password">
                     <button id="submit-btn" type="submit" class="popup__btn lng-popup__btn">Submit</button>
                     <button id="registration_btn" type="submit" class="popup__btn lng-signup">Sign Up</button>
                 </form>
-                <form class="popup__form form_registration">
+                <form action="" class="popup__form form_registration">
                     <span class="popup__form_title lng-popup_title_sign-up">Sign Up</span>
                     <input name="email" type="email" placeholder="E-mail">
                     <input name="password" type="password" placeholder="Password">
@@ -313,6 +315,7 @@
         </footer>
     </div>
 
+    <script src="./js/choices.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/lang.js"></script>
